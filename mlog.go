@@ -57,14 +57,13 @@ func (t* MLog) VPrintf(priority string, format string, a...interface{}){
     log.SetOutput(t.verboseWriter)
   }
 
-
   log.Printf(priority+": "+format,a...)
 
 }
 
 func (t* MLog) NPrintf(format string, a...interface{}) {
-    log.SetOutput(t.normalWriter)
-    log.Printf(format,a...)
+  log.SetOutput(t.normalWriter)
+  log.Printf(format,a...)
 }
 func (t* MLog) NPrintln(a...interface{}){
   log.SetOutput(t.normalWriter)

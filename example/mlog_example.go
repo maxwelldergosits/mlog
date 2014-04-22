@@ -24,4 +24,5 @@ func main() {
   log.VPrintln("debug2","This should Print")
   log.VPrintln("network","This should Print")
   log.NPrintln("This should Print")
+
 }
